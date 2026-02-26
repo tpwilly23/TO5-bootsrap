@@ -1,1 +1,135 @@
 
+.container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+main {
+    flex: 2;
+    background-color: #111111;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+aside {
+    flex: 1;
+    background-color: #1A1A1A;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    color: #ffffff;
+}
+main section {
+    margin-bottom:20px;
+    padding: 15px;
+    background-color: #ffffff;
+    border: 1px dashed #bbb;
+    border-radius: 5px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    color: #0B0B0B;
+}
+header {
+    position: sticky;
+    top: 0;
+    background-color: #a38014;
+    color: white;
+    padding: 10px 20px;
+    z-index: 100;
+    text-align:center;
+}
+main section:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+}
+body {
+    font-family: 'Montserrat', 'EB Garamond', sans-serif;
+    line-height: 1.5;
+    background-color: #0B0B0B;
+    color: #ffffff;
+}
+nav {
+    background-color: #111111;
+    padding: 10px 0;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px; 
+    margin: 0;
+}
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+nav a:hover {
+    color: #a38014; 
+}
+footer {
+    background-color: #0b0b0b;
+    color: #a38014;
+    text-align: center;
+    padding: 30px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px; 
+}
+footer a {
+    color: #e67e22;
+}
+table {
+   background-color: #ffffff;
+   color: #0b0b0b;
+   border-color: #e0e0e0;
+    border-collapse:collapse;
+}
+thead {
+   background-color: #a38014;
+   color: #0B0B0B;
+}
+tfoot {
+   background-color: #f5f5f5;
+}
+blockquote {
+   margin: 20px;
+   padding-left: 15px;
+   border-left:5px solid #a38014;
+   font-style:italic;
+   color: #ccc;
+}
+h1,h2,h3 {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+tbody tr:hover{
+    background-color:#a38014;
+    cursor:printer;
+}
+tbody tr:nth-child(even) {
+    background-color:#f2f2f2;
+}
+h1 {
+    letter-spacing:4px;
+    text-transform:uppercase;
+}
+p{
+    line-height: 1.8;
+    word-spacing: 1px;
+}
+button{
+    background-color:#a38014;
+    color: #0b0b0b;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition:background-color 0.3s ease;
+}
+button:hover{
+    background-color: #866a10;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
