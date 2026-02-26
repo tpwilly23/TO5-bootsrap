@@ -1,1 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style (3).css">
+    <title>Adopt-a-Dragon - Find Your Perfect Companion</title>
+</head>
+<body>
+    <header>
+        <h1>Adopt-a-Dragon</h1>
+        <p>Find Your Legendary Companion</p>
+    </header>
 
+    <nav>
+        <ul>
+            <li><a href="#available">Available Dragons</a></li>
+            <li><a href="#application">Application Form</a></li>
+            <li><a href="#care">Dragon Care</a></li>
+            <li><a href="#volunteer-registration">Volunteer</a></li>
+            <li><a href="#inventory">Donation Inventory</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- SECTION 1: Available Dragons with TABLE (Team 5) -->
+        <section id="available">
+            <h2>Available Dragons</h2>
+            <p>Browse our current selection of adoptable dragons.</p>
+
+            <!-- TABLE with proper structure (Team 5 requirement) -->
+            <table>
+                <caption>Current Dragon Inventory - Winter 2026</caption>
+                
+                <!-- COLGROUP (Team 5 requirement) -->
+                <colgroup>
+                    <col style="background-color: #f0f0f0;">
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                </colgroup>
+
+                <!-- THEAD (Team 5 requirement) -->
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Size</th>
+                        <th>Fire-Breathing</th>
+                        <th>Temperament</th>
+                        <th>Adoption Fee</th>
+                    </tr>
+                </thead>
+
+                <!-- TBODY (Team 5 requirement) -->
+                <tbody>
+                    <tr>
+                        <td>Ember</td>
+                        <td>Small (8 ft)</td>
+                        <td>Moderate</td>
+                        <td>Friendly</td>
+                        <td>$5,000</td>
+                    </tr>
+                    <tr>
+                        <td>Thunderwing</td>
+                        <td>Large (25 ft)</td>
+                        <td>High</td>
+                        <td>Independent</td>
+                        <td>$15,000</td>
+                    </tr>
+                    <tr>
+                        <td>Sparkle</td>
+                        <td>Tiny (3 ft)</td>
+                        <td>None</td>
+                        <td>Playful</td>
+                        <td>$2,500</td>
+                    </tr>
+                    <tr>
+                        <td>Shadowfang</td>
+                        <td>Medium (15 ft)</td>
+                        <td>Low</td>
+                        <td>Cautious</td>
+                        <td>$8,000</td>
+                    </tr>
+                    <tr>
+                        <td>Goldenscale</td>
+                        <td>Large (30 ft)</td>
+                        <td>High</td>
+                        <td>Loyal</td>
+                        <td>$20,000</td>
+                    </tr>
+                </tbody>
+
+                <!-- TFOOT (Team 5 requirement) -->
+                <tfoot>
+                    <tr>
+                        <td colspan="4"><strong>Total Dragons Available:</strong></td>
+                        <td><strong>5 Dragons</strong></td>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <!-- DIALOG element (Team 5 requirement) -->
+            <dialog id="dragonDialog">
+                <h3>Dragon Specifications - Ember</h3>
+                <p><strong>Species:</strong> Fire Drake</p>
+                <p><strong>Age:</strong> 12 years</p>
+                <p><strong>Diet:</strong> Carnivore (50 lbs meat daily)</p>
+                <p><strong>Special Needs:</strong> Requires fireproof housing</p>
+                <p><strong>Training Level:</strong> Intermediate</p>
+                <p><strong>Compatibility:</strong> Good with experienced handlers</p>
+                <button onclick="document.getElementById('dragonDialog').close()">Close</button>
+            </dialog>
+
+            <p>
+                <button onclick="document.getElementById('dragonDialog').showModal()">
+                    View Ember's Full Profile
+                </button>
+            </p>
+        </section>
+
+        <!-- SECTION 2: Application FORM (Team 3) -->
+        <section id="application">
+            <h2>Dragon Adoption Application</h2>
+            <p>Complete this form to begin your adoption journey.</p>
+
+            <!-- FORM element (Team 3 requirement) -->
+            <form action="#" method="post">
+                
+                <!-- FIELDSET 1: Contact Information (Team 3 requirement) -->
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    
+                    <!-- TEXT INPUT for name (Team 3 requirement) -->
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                    <br><br>
+
+                    <!-- TEXT INPUT for email (Team 3 requirement) -->
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                    <br><br>
+
+                    <!-- TEXT INPUT for phone (Team 3 requirement) -->
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    <br><br>
+                </fieldset>
+
+                <br>
+
+                <!-- FIELDSET 2: Dragon Preferences -->
+                <fieldset>
+                    <legend>Dragon Preferences</legend>
+
+                    <!-- SELECT dropdown (Team 3 requirement) -->
+                    <label for="dragonType">Preferred Dragon Size:</label>
+                    <select id="dragonType" name="dragonType" required>
+                        <option value="">-- Select Size --</option>
+                        <option value="tiny">Tiny (Under 5 ft)</option>
+                        <option value="small">Small (5-10 ft)</option>
+                        <option value="medium">Medium (10-20 ft)</option>
+                        <option value="large">Large (20+ ft)</option>
+                    </select>
+                    <br><br>
+
+                    <label for="experience">Experience Level:</label>
+                    <select id="experience" name="experience" required>
+                        <option value="">-- Select Experience --</option>
+                        <option value="beginner">Beginner</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="advanced">Advanced</option>
+                        <option value="expert">Expert Dragon Handler</option>
+                    </select>
+                    <br><br>
+                </fieldset>
+
+                <br>
+
+                <!-- FIELDSET 3: Additional Information -->
+                <fieldset>
+                    <legend>Additional Information</legend>
+
+                    <!-- TEXTAREA for comments (Team 3 requirement) -->
+                    <label for="specialRequests">Special Requests or Comments:</label>
+                    <br>
+                    <textarea id="specialRequests" name="specialRequests" rows="5" cols="50" 
+                              placeholder="Tell us about your home, experience, or any special requests..."></textarea>
+                    <br><br>
+
+                    <label for="housingType">Housing Type:</label>
+                    <select id="housingType" name="housingType">
+                        <option value="">-- Select Housing --</option>
+                        <option value="cave">Cave</option>
+                        <option value="barn">Barn</option>
+                        <option value="tower">Tower</option>
+                        <option value="mountain">Mountain Peak</option>
+                    </select>
+                    <br><br>
+                </fieldset>
+
+                <br>
+
+                <!-- BUTTON to submit (Team 3 requirement) -->
+                <button type="submit">Submit Application</button>
+                <button type="reset">Clear Form</button>
+            </form>
+        </section>
+
+        <!-- SECTION 3: Dragon Care Information -->
+        <section id="care">
+            <h2>Dragon Care Guide</h2>
+
+            <!-- DETAILS and SUMMARY elements (Team 5 requirement) -->
+            <details>
+                <summary>Basic Dragon Care Requirements</summary>
+                <p>All dragons require daily feeding, exercise, and social interaction. Fire-breathing dragons need fireproof housing and proper ventilation. Budget at least $1,000 monthly for food and care supplies.</p>
+            </details>
+
+            <details>
+                <summary>Feeding Guidelines</summary>
+                <p>Dragons are carnivores and require fresh meat daily. Small dragons eat 20-30 lbs, medium dragons 40-60 lbs, and large dragons 80-100 lbs of meat per day. Always provide fresh water.</p>
+            </details>
+
+            <details>
+                <summary>Training and Socialization</summary>
+                <p>Begin training early with positive reinforcement. Dragons bond strongly with their handlers. Regular flight time is essential for physical and mental health. Consider professional training classes for beginners.</p>
+            </details>
+
+            <details>
+                <summary>Legal Requirements</summary>
+                <p>Dragon ownership requires a special exotic pet license in most regions. Fire-breathing dragons require additional permits. Check your local regulations before adopting.</p>
+            </details>
+
+            <details>
+                <summary>Health and Veterinary Care</summary>
+                <p>Annual check-ups with a dragon veterinarian are required. Common health issues include scale rot, wing injuries, and digestive problems. Emergency vet services should be available 24/7.</p>
+            </details>
+        </section>
+
+        <!-- SECTION 4: Volunteer Registration (Nathan's Contribution - Team 3) -->
+        <section id="volunteer-registration">
+            <h2>Join Our Mission</h2>
+            <p>Ready to help? Fill out the form below to volunteer for our upcoming events!</p>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    
+                    <p>
+                        <label for="full-name">Full Name:</label><br>
+                        <input type="text" id="full-name" name="full-name" placeholder="Enter your name" required>
+                    </p>
+                    
+                    <p>
+                        <label for="user-email">Email Address:</label><br>
+                        <input type="email" id="user-email" name="user-email" placeholder="email@example.com" required>
+                    </p>
+                    
+                    <p>
+                        <label for="user-phone">Phone Number:</label><br>
+                        <input type="tel" id="user-phone" name="user-phone" placeholder="555-555-5555">
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Event Preferences</legend>
+                    
+                    <p>
+                        <label for="event-type">Which event are you interested in?</label><br>
+                        <select id="event-type" name="event-type">
+                            <option value="toy-drive">Local Toy Drive</option>
+                            <option value="shelter-visit">Shelter Delivery Day</option>
+                            <option value="fundraiser">Community Fundraiser</option>
+                            <option value="toy-bank">Toy Bank Staffing</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="special-requests">Special Requests or Comments:</label><br>
+                        <textarea id="special-requests" name="special-requests" rows="4" cols="50" placeholder="Tell us about your experience or any special needs..."></textarea>
+                    </p>
+                </fieldset>
+                <p>
+                    <button type="submit">Submit Registration</button>
+                </p>
+            </form>
+        </section>
+
+        <!-- SECTION 5: Donation Inventory (Tom's Contribution - Team 5) -->
+        <section id="inventory">
+            <h2>Donation Inventory</h2>
+            
+            <table border="1">
+                <caption>Current Toy Stock by Category</caption>
+                
+                <colgroup>
+                    <col span="1" style="background-color: #f2f2f2;">
+                    <col span="2">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>Item Category</th>
+                        <th>Durability Rating</th>
+                        <th>Stock Level</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Rubber Chewers</td>
+                        <td>High</td>
+                        <td>450 units</td>
+                    </tr>
+                    <tr>
+                        <td>Plush Squeakers</td>
+                        <td>Medium</td>
+                        <td>1,200 units</td>
+                    </tr>
+                    <tr>
+                        <td>Interactive Puzzles</td>
+                        <td>High</td>
+                        <td>150 units</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Total Inventory Count</td>
+                        <td>1,800 units</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <br>
+            <details>
+                <summary>Click here for Safety Guidelines</summary>
+                <p>All donated toys must be BPA-free and undergo sanitization.</p>
+            </details>
+            <br>
+            <button onclick="document.getElementById('spec-dialog').showModal()">View Toy Safety Specs</button>
+            
+            <dialog id="spec-dialog">
+                <h3>Toy Material Specifications</h3>
+                <ul>
+                    <li>Material: Non-toxic natural rubber</li>
+                    <li>Lead-free paint</li>
+                </ul>
+                <button onclick="document.getElementById('spec-dialog').close()">Close</button>
+            </dialog>
+        </section>
+    </main>
+
+    <aside>
+        <h3>Adoption Statistics</h3>
+        <ul>
+            <li>Dragons adopted in 2025: 347</li>
+            <li>Success rate: 98%</li>
+            <li>Average adoption time: 2 weeks</li>
+        </ul>
+
+        <h3>Testimonials</h3>
+        <blockquote>"Adopting Sparkle was the best decision ever! She's gentle and loves to play." - Sarah M.</blockquote>
+        <blockquote>"Thunderwing is majestic and surprisingly easy to care for once you learn the basics." - Marcus T.</blockquote>
+    </aside>
+
+    <footer>
+        <h3>Contact Us</h3>
+        <p>Email: adopt@dragonrescue.org</p>
+        <p>Phone: (555) DRAGONS</p>
+        <p>&copy; 2026 Adopt-a-Dragon Rescue Organization</p>
+    </footer>
+
+</body>
+</html>
